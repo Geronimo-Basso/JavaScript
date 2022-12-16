@@ -1,11 +1,11 @@
+const ahora = new Date();
+
 const libro = {
     titulo: "Lord of the rings",
     autor: "George lucas",
     fecha : new Date("25 may 1991"),
     url : "https://en.wikipedia.org/wiki/The_Lord_of_the_Rings"
 }
-const ahora = new Date();
-
 
 const lista = ["Geronimo",
                 21,
@@ -17,9 +17,6 @@ const lista = ["Geronimo",
 console.log(lista)
 
 //---------------------------------------------- Solucion profe --------------------------------------------------------------------------------------------
-
-
-
 const lista2 = [
     "Gorka",
     34,
