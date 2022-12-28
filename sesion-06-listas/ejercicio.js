@@ -43,6 +43,7 @@ const peliculasFavoritasPos2010 = peliculasFavoritas.filter(pelicula => pelicula
 console.log( peliculasFavoritasPos2010 )
 console.log( "-------------------------------------------------------------------------------------------------" )
 
+//Le agregue el indice para que quede mejor
 const directoresMAP = peliculasFavoritas.map((pelicula, indice) => `${indice + 1} - ${pelicula.director}`)
 console.log( directoresMAP )
 console.log( "-------------------------------------------------------------------------------------------------" )
@@ -55,9 +56,11 @@ console.log( directoresMAP2 )
 console.log( "-------------------------------------------------------------------------------------------------" )
 function addMapToDirectores ( pelicula ) {
     var i = 0
+    //Le agregue el indice para que quede mejor
     return `${i + 1} - ${pelicula.director}`
 }
 
+//Le agregue el indice para que quede mejor
 const peliculasMAP = peliculasFavoritas.map((pelicula, indice) => `${indice + 1} - ${pelicula.titulo}`)
 console.log( peliculasMAP )
 console.log( "-------------------------------------------------------------------------------------------------" )
@@ -67,4 +70,4 @@ console.log( peliculasYdirectores )
 
 console.log( "-------------------------------------------------------------------------------------------------" )
 const peliculasYdirectores2 = [...directoresMAP , ...peliculasMAP]
-console.log( peliculasYdirectores )
+console.log( peliculasYdirectores2 )
